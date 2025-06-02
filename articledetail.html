@@ -1,0 +1,523 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Iema Journal</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/chartist.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/transitions.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body class="sj-home">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+				Preloader Start
+	*************************************-->
+	<div class="preloader-outer">
+		<div class='loader'>
+			<div class='loader--dot'></div>
+			<div class='loader--dot'></div>
+			<div class='loader--dot'></div>
+			<div class='loader--dot'></div>
+		</div>
+	</div>
+	<!--************************************
+				Preloader End
+	*************************************-->
+	<!--************************************
+			Wrapper Start
+	*************************************-->
+	<div id="sj-wrapper" class="sj-wrapper">
+		<!--************************************
+				Content Wrapper Start
+		*************************************-->
+		<div class="sj-contentwrapper">
+			<!--************************************
+					Header Start
+			*************************************-->
+			<header id="sj-header" class="sj-header sj-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<div class="sj-topbar">
+								<ul class="sj-socialicons sj-socialiconssimple">
+									<li class="sj-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
+									<li class="sj-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+									<li class="sj-linkedin"><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="sj-googleplus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a></li>
+								</ul>
+								<div class="sj-languagelogin">
+									<div class="sj-loginarea">
+										<ul class="sj-loging">
+											<li><a href="login.php">Login</a></li>
+											<li><a href="register.php">Register</a></li>
+										</ul>
+									</div>
+									<div class="sj-userloginarea">
+										<a href="">
+											<i class="fa fa-angle-down"></i>
+											<img src="images/user-img.jpg" alt="image description">
+											<div class="sj-loginusername">
+    <h3>Hi, <?php echo htmlspecialchars($_SESSION['first_name'] ?? 'Guest'); ?></h3>
+    <span>Author</span>
+</div>
+
+										</a>
+										<nav class="sj-usernav">
+											<ul>
+												<li><a href="underreview.html"><i class="lnr lnr-sync"></i><span>Articles Under Review</span></a></li>
+												<li><a href="addtemplates.html"><i class="lnr lnr-briefcase"></i><span>Add Templates</span></a></li>
+												<li><a href="aticle-list.html"><i class="lnr lnr-sync"></i><span>Aticle List</span></a></li>
+												<li><a href="generalsettings.html"><i class="lnr lnr-layers"></i><span>General Settings</span></a></li>
+												<li><a href="manageuser.html"><i class="lnr lnr-users"></i><span>Manage Users</span></a></li>
+												<li><a href="manageeditions.html"><i class="lnr lnr-tag"></i><span>Manage Editions</span></a></li>
+												<li><a href="emailtemplates.html"><i class="lnr lnr-envelope"></i><span>Email Templates</span></a></li>
+												<li><a href="accountsettings.html"><i class="lnr lnr-lock"></i><span>Account Settings</span></a></li>
+												<li><a href="logout.php"><i class="lnr lnr-exit"></i><span>Logout</span></a></li>
+											</ul>
+										</nav>
+									</div>
+									<div class="sj-languages">
+										<a id="sj-languages-button" href="javascript:void(0);">
+											<img src="images/flags/flag-02.jpg" alt="image description">
+											<span>Eng</span>
+											<i class="fa fa-angle-down"></i>
+										</a>
+										<ul>
+											<li>
+												<a href="javascript:void(0);">
+													<img src="images/flags/flag-01.jpg" alt="image description">
+													<span>Ara</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<img src="images/flags/flag-02.jpg" alt="image description">
+													<span>Eng</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<img src="images/flags/flag-03.jpg" alt="image description">
+													<span>Chi</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sj-navigationarea">
+								<strong class="sj-logo"><a href="index.php"><img src="images/logo.jpg" width="150px" height="150px" alt="company logo here" ></a></strong>
+								<div class="sj-rightarea">
+									<nav id="sj-nav" class="sj-nav navbar-expand-lg">
+										<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+											<i class="lnr lnr-menu"></i>
+										</button>
+										<div class="collapse navbar-collapse sj-navigation" id="navbarNav">
+											<ul>
+												<li class="current-menu-item menu-item-has-children page_item_has_children">
+													<a href="index.php"><i class="lnr lnr-home"></i></a>
+												</li>
+												<li>
+												<a href="aboutus.php">About us</a>
+													<ul class="sub-menu">
+													<li><a href="aimnscope.php">Aims & Scope</a></li>
+                                                    <li><a href="abstract.php">Abstract & Indexing</a></li>
+                                                    <li><a href="submission.php">Submission Guidelines</a></li>
+                                                    <li><a href="editorial.php">Editorial Process</a></li>
+
+
+
+</ul>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<a href="javascript:void(0);">Articles</a>
+													<ul class="sub-menu">
+														<li><a href="articles.html">Articles</a></li>
+														<li><a href="submitarticle.php">Submit Article</a></li>
+													</ul>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<span class="sj-tagnew">New</span>
+													<a href="javascript:void(0);">Issues</a>
+													<ul class="sub-menu">
+														<li><a href="issuesweeks.html">Issues Weeks</a></li>
+														<li><a href="issueyears.php">Issues Years</a></li>
+													</ul>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<a href="javascript:void(0);">Quick Links</a>
+													<ul class="sub-menu">
+														
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</nav>
+									<a class="sj-btntopsearch" href="#sj-searcharea"><i class="lnr lnr-magnifier"></i></a>
+									<a class="sj-btn sj-btnactive" href="submitarticle.php">Submit Your Article</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!--************************************
+					Header End
+			*************************************-->
+			<!--************************************
+					Inner Banner Start
+			*************************************-->
+			<div class="sj-innerbanner">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="sj-innerbannercontent">
+								<h1>Article Title Here</h1>
+								<ol class="sj-breadcrumb">
+									<li><a href="index.php">Home</a></li>
+									<li><a href="articles.html">Articles</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--************************************
+					Inner Banner End
+			*************************************-->
+			<!--************************************
+					Main Start
+			*************************************-->
+			<main id="sj-main" class="sj-main sj-haslayout sj-sectionspace">
+				<div id="sj-twocolumns" class="sj-twocolumns">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-8 col-lg-9">
+								<div id="sj-content" class="sj-content">
+									<div class="sj-articledetail">
+							
+													<section id="analytics-job-creation-nigeria">
+														<article>
+															<h2>Analytics and Job Creation in Nigeria: A Threat or Opportunity?</h2>
+															
+															<p>In the rapidly evolving business landscape, the role of analytics has become increasingly crucial. As Nigeria, the most populous country in Africa, grapples with the challenges of economic growth and job creation, it is paramount to examine the impact of analytics on the labor market. This paper aims to explore the implications of the rise of analytics, machine learning, and big data on job opportunities in Nigeria, and whether these technological advancements present a threat or an opportunity for the country's workforce.</p>
+															
+															<h3>The Analytics Revolution in Nigeria</h3>
+															<p>The analytics revolution, characterized by the shift from intuition-driven decision-making to evidence-based approaches, is transforming the business landscape globally. Experts emphasize the increasing importance of analytics skills across various functional areas, including human resources, finance, and marketing. This trend is not limited to developed countries, as businesses in developing nations like Nigeria are also recognizing the potential of analytics to drive organizational efficiency and growth.</p>
+															
+															<p>Recent studies have highlighted the growing demand for analytics professionals in the global job market. This demand is driven by the proliferation of big data and the need for skilled individuals who can extract valuable insights from vast amounts of information. However, the adoption of analytics in Nigeria has been slower compared to developed countries, as organizations face challenges such as weaker currency, low savings, and low productivity.</p>
+															
+															<h3>The Implications of Analytics on Job Creation in Nigeria</h3>
+															<p>The impact of analytics on job creation in Nigeria is a complex issue that requires a nuanced examination. On one hand, the integration of analytics and automation technologies could potentially lead to job displacement, as certain routine tasks become automated. This could have dire consequences for a country grappling with high unemployment rates and a large youth population.</p>
+															
+															<p>On the other hand, the rise of analytics presents an opportunity for Nigeria to develop a skilled workforce capable of leveraging data-driven insights to drive business growth and innovation. Skilled analytics professionals can play a crucial role in optimizing business operations, identifying new market opportunities, and improving decision-making processes. Moreover, the development of a robust analytics ecosystem could attract foreign investment and foster the growth of technology-driven industries in Nigeria, leading to the creation of new job opportunities.</p>
+															
+															<h3>Strategies for Harnessing the Potential of Analytics</h3>
+															<p>To capitalize on the opportunities presented by the analytics revolution, Nigeria must address the skills gap and create an enabling environment for the adoption of analytics-driven practices. This will require a multi-pronged approach, including:</p>
+															
+															<ul>
+																<li>Investing in STEM education to build a pipeline of skilled analytics professionals.</li>
+																<li>Collaborating with the private sector to develop industry-relevant training programs and upskill the existing workforce.</li>
+																<li>Implementing policies and incentives to encourage the integration of analytics and automation technologies in businesses, while mitigating the potential negative impacts on employment.</li>
+																<li>Fostering an ecosystem that supports the growth of data-driven startups and the development of analytics-driven industries.</li>
+															</ul>
+															
+															<p>By taking a proactive and strategic approach, Nigeria can harness the potential of analytics to drive sustainable economic growth and job creation, positioning the country as a hub for innovation and technological advancement in Africa.</p>
+															
+															<h3>Conclusion</h3>
+															<p>The growing influence of analytics in the global business landscape presents both challenges and opportunities for Nigeria's economic development and job creation efforts. While the integration of analytics and automation technologies could potentially lead to job displacement, the strategic development of a skilled analytics workforce and the creation of an enabling environment for the adoption of data-driven practices can unlock new opportunities for growth and innovation. To capitalize on the potential of analytics, Nigeria must invest in STEM education, collaborate with the private sector, implement supportive policies, and foster a thriving ecosystem for data-driven startups and industries.</p>
+															
+															<h3>The Role of Analytics in Job Creation</h3>
+															<p>The integration of analytics and data-driven decision making can play a crucial role in addressing Nigeria's job creation challenges. Analytics can help businesses and policymakers identify new market opportunities, optimize operations, and make more informed decisions that can lead to the creation of new jobs.</p>
+															
+															<p>However, the adoption of analytics in Nigeria has been slower compared to developed countries, with organizations facing a range of challenges, including weaker currency, low savings, and low productivity.</p>
+															
+															<h3>Opportunities and Risks of Analytics in Nigeria</h3>
+															<p>The rise of analytics presents both opportunities and risks for job creation in Nigeria.</p>
+															
+															<p>On the one hand, the integration of analytics and automation technologies could potentially lead to job displacement, as certain routine tasks become automated. This could have dire consequences for a country grappling with high unemployment rates and a large youth population.</p>
+															
+															<p>On the other hand, the development of a skilled analytics workforce and the creation of an enabling environment for the adoption of data-driven practices can unlock new opportunities for growth and innovation. Skilled analytics professionals can play a crucial role in optimizing business operations, identifying new market opportunities, and improving decision-making processes. Moreover, the development of a robust analytics ecosystem could attract foreign investment and foster the growth of technology-driven industries in Nigeria, leading to the creation of new job opportunities.</p>
+															
+															<h3>Challenges in the Nigerian Job Market and the Role of Analytics</h3>
+															<p>Nigeria's economy has experienced impressive growth in recent years, but the country continues to face significant challenges in terms of job creation and addressing high unemployment rates, especially among the youth population.</p>
+															
+															<p>One of the key challenges is the heavy reliance of the Nigerian economy on the oil and gas sector, which has led to a lack of diversification and a vulnerability to fluctuations in global oil prices. To achieve sustainable economic growth and job creation, Nigeria must focus on diversifying its economy and developing new industries that can absorb the country's growing workforce.</p>
+															
+															<p>Entrepreneurship and the development of small and medium-sized enterprises have been identified as key drivers of job creation in Nigeria. However, the country continues to face challenges in terms of access to finance, infrastructure deficiencies, and a lack of supportive policies for SMEs.</p>
+															
+															<p>The integration of analytics and data-driven decision making can play a crucial role in addressing these challenges. Analytics can help businesses and policymakers identify new market opportunities, optimize operations, and make more informed decisions that can lead to the creation of new jobs.</p>
+															
+															<p>However, the adoption of analytics in Nigeria has been slower compared to developed countries, with organizations facing a range of challenges, including weaker currency, low savings, and low productivity.</p>
+															
+															<h3>Harnessing the Potential of Analytics for Job Creation in Nigeria</h3>
+															<p>To harness the potential of analytics for job creation in Nigeria, the country must address the following key challenges:</p>
+															
+															<ul>
+																<li><strong>Strengthening digital infrastructure and data availability:</strong> Nigeria must invest in the development of robust digital infrastructure, including high-speed internet connectivity and cloud computing capabilities, to enable the collection, storage, and analysis of data.</li>
+																<li><strong>Developing a skilled analytics workforce:</strong> Nigeria must invest in STEM education and skills development programs to build a pool of talented analytics professionals who can drive the adoption of data-driven practices in the private and public sectors.</li>
+																<li><strong>Fostering an enabling environment for data-driven entrepreneurship:</strong> Nigeria must create an enabling environment for the growth of data-driven startups and small businesses, including access to financing, mentorship programs, and supportive regulations.</li>
+																<li><strong>Promoting data-driven decision making in the public sector:</strong> The Nigerian government must lead by example and integrate data-driven practices into its decision-making processes, setting the tone for the private sector and driving the adoption of analytics across the economy.</li>
+															</ul>
+															
+															<p>By addressing these challenges and harnessing the potential of analytics, Nigeria can unlock new opportunities for sustainable economic growth and job creation, positioning the country as a hub for innovation and technological advancement in Africa.</p>
+														</article>
+													</section>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-4 col-lg-3">
+								<aside id="sj-sidebar" class="sj-sidebar">
+									<div class="sj-widget sj-widgetsearch">
+										<div class="sj-widgetcontent">
+											<form class="sj-formtheme sj-formsearch">
+												<fieldset>
+													<input type="search" name="search" class="form-control" placeholder="Search here">
+													<button type="submit" class="sj-btnsearch"><i class="lnr lnr-magnifier"></i></button>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetrelatedarticles">
+										<div class="sj-widgetheading">
+											<h3>Related Articles</h3>
+										</div>
+										<div class="sj-widgetcontent">
+											<ul>
+												<li>
+													<span class="sj-username"><a href="javascript:void(0);">Coleman Hoff</a></span>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit ased eiusmod tempor incididunt.</p>
+													</div>
+												</li>
+												<li>
+													<span class="sj-username"><a href="javascript:void(0);">Milan Poat</a></span>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit ased eiusmod tempor incididunt.</p>
+													</div>
+												</li>
+												<li>
+													<span class="sj-username"><a href="javascript:void(0);">Kimberly Delapena</a></span>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit ased eiusmod tempor incididunt.</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetimpactfector">
+										<div class="sj-widgetcontent">
+											<ul>
+												<li>
+													<h3>Impact Factor<span>2.125</span></h3>
+													<h3>5 Year Impact Factor<span>2.853</span></h3>
+												</li>
+												<li>
+													<h3>Dr. Desmond Bratton</h3>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit sedo amod tempor incididunt. <a href="javascript:void(0)">Read More</a></p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetnoticeboard">
+										<div class="sj-widgetheading">
+											<h3>Notice Board</h3>
+										</div>
+										<div class="sj-widgetcontent">
+											<ul>
+												<li><a href="javascript:void(0);">Adipisicing elitaium sed dotas eiusm tempor incididunt utae labore etiate dolore magna aliqua enim.</a></li>
+												<li><a href="javascript:void(0);">Labore etiat dolore magna aliquaen ad minim veniam.</a></li>
+												<li><a href="javascript:void(0);">Duis aute irure dolor in reprehender</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetadd">
+										<span class="sj-headtitle">Advertisment 270 x270</span>
+										<div class="sj-widgetcontent">
+											<figure class="sj-addimage"><a href="javascript:void(0);"><img src="images/widget-add.jpg" alt="image description"></a></figure>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetquestions">
+										<div class="sj-widgetheading">
+											<h3>Question Of The Week</h3>
+										</div>
+										<div class="sj-widgetcontent">
+											<div class="sj-description">
+												<p>Consectetur adipisicing elit, sed aeiuse tempor incididunt ut labore etamiudon magna aliqua enim ad minim?</p>
+											</div>
+											<div class="sj-questions">
+												<div class="sj-selectgroup">
+													<span class="sj-radio">
+														<input id="sj-qone" type="radio" name="question" value="qone" checked="">
+														<label for="sj-qone">Sputum stain for acid-fast bacilli</label>
+													</span>
+													<span class="sj-radio">
+														<input id="sj-qtwo" type="radio" name="question" value="qtwo">
+														<label for="sj-qtwo">Pleural biopsy</label>
+													</span>
+													<span class="sj-radio">
+														<input id="sj-qthree" type="radio" name="question" value="qthree">
+														<label for="sj-qthree">Pleural fluid amylase</label>
+													</span>
+													<span class="sj-radio">
+														<input id="sj-qfour" type="radio" name="question" value="qfour">
+														<label for="sj-qfour">Pleural fluid cytology</label>
+													</span>
+												</div>
+												<a class="sj-btn" href="javascript:void(0);">Submit Now</a>
+											</div>
+										</div>
+									</div>
+									
+									
+									<div class="sj-widget sj-widgetadd">
+										<div class="sj-widgetcontent">
+											<figure class="sj-addimage"><a href="javascript:void(0);"><img src="images/widget-add2.jpg" alt="image description"></a></figure>
+										</div>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--************************************
+					Main End
+			*************************************-->
+			<!--************************************
+					Footer Start
+			*************************************-->
+			<footer id="sj-footer" class="sj-footer sj-haslayout">
+				<div class="container">
+					<div class="row">
+						<a class="sj-btnscrolltotop" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
+						<div class="sj-footercolumns">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-footeraboutus">
+									<strong class="sj-logo">
+										<a href="index.html"><img src="images/logo.png" alt="image description"></a>
+									</strong>
+									<div class="sj-description">
+										<p>Eiusmod tempor incididunt ut labore etai dolore magna aliqua enim nostrud exercitation... <a href="javascript:void(0);">Read More</a></p>
+									</div>
+									<ul class="sj-socialicons sj-socialiconssimple">
+										<li class="sj-facebook"><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="sj-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+										<li class="sj-linkedin"><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+										<li class="sj-googleplus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a></li>
+										<li class="sj-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-widget sj-widgetusefullinks">
+									<div class="sj-widgetheading">
+										<h3>By Specialty</h3>
+									</div>
+									<div class="sj-widgetcontent">
+										<ul>
+											<li><a href="javascript:void(0);">Contact Us</a></li>
+											<li><a href="javascript:void(0);">Careers @ Amentojourn</a></li>
+											<li><a href="javascript:void(0);">Get Help and Support</a></li>
+											<li><a href="javascript:void(0);">Rights &amp; Permissions</a></li>
+											<li class="sj-more"><a href="javascript:void(0);">more</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-widget sj-widgetresources">
+									<div class="sj-widgetheading">
+										<h3>Resources</h3>
+									</div>
+									<div class="sj-widgetcontent">
+										<ul>
+											<li><a href="javascript:void(0);">Authors</a></li>
+											<li><a href="javascript:void(0);">Librarians</a></li>
+											<li><a href="javascript:void(0);">Sponsors &amp; Advertisers</a></li>
+											<li><a href="javascript:void(0);">Press &amp; Media</a></li>
+											<li class="sj-more"><a href="javascript:void(0);">more</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-widget sj-widgetcontactus">
+									<div class="sj-widgetheading">
+										<h3>Get In Touch</h3>
+									</div>
+									<div class="sj-widgetcontent">
+										<ul>
+											<li><i class="lnr lnr-home"></i><address>123 Office St, ABC Building, Melbourne, Australia. </address></li>
+											<li><a href="tel:(+4)123456789101"><i class="lnr lnr-phone"></i><span>(+4) 1234 5678 9101</span></a></li>
+											<li><a href="tel:(+4)123456789101"><i class="lnr lnr-screen"></i><span>(+4) 4321 8765 1019</span></a></li>
+											<li><a href="mailto:info@yourdomain.com"><i class="lnr lnr-envelope"></i><span>info@yourdomain.com</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sj-footerbottom">
+							<p class="sj-copyrights">© 2019 <span>Amentojourn</span>. All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--************************************
+					Footer End
+			*************************************-->
+		</div>
+		<!--************************************
+				Content Wrapper End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+	<!--************************************
+			Search Start
+	*************************************-->
+	<div id="sj-searcharea" class="sj-searcharea">
+		<button type="button" class="close">×</button>
+		<form class="sj-formtheme sj-formsearcmain">
+			<input type="search" value="" placeholder="Search Here..." />
+			<button type="submit" class="sj-btn sj-btnactive"><span>Search</span></button>
+		</form>
+	</div>
+	<!--************************************
+			Search End
+	*************************************-->
+	<script src="js/vendor/jquery-3.3.1.js"></script>
+	<script src="js/vendor/jquery-library.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.js"></script>
+	<script src="js/scrollbar.min.js"></script>
+	<script src="js/chartist.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

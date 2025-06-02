@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Review Process | International Journal of Environmental Monitoring and Analysis</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-bg: #f8f9fa;
+            --lighter-bg: #f0f7ff;
+            --text-color: #333;
+            --light-text: #777;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation Menu */
+        .nav-menu {
+            display: flex;
+            justify-content: center;
+            background-color: var(--primary-color);
+            padding: 15px 0;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        
+        .nav-btn {
+            padding: 12px 25px;
+            margin: 0 10px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background-color: white;
+            color: var(--primary-color);
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            font-size: 2.2rem;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-top: 50px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--secondary-color);
+            font-size: 1.8rem;
+        }
+        
+        h3 {
+            color: var(--primary-color);
+            margin-top: 30px;
+            font-size: 1.4rem;
+        }
+        
+        .container {
+            display: flex;
+            gap: 40px;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            flex: 2;
+        }
+        
+        .sidebar {
+            flex: 1;
+        }
+        
+        .process-step {
+            background-color: var(--light-bg);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+            border-radius: 50%;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+        
+        .review-section {
+            background-color: var(--lighter-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+            position: relative;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--secondary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent-color);
+        }
+        
+        .btn-accent:hover {
+            background-color: #c0392b;
+        }
+        
+        .sidebar-box {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        
+        .timeline {
+            margin: 30px 0;
+        }
+        
+        .timeline-item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 3px solid var(--secondary-color);
+        }
+        
+        .timeline-date {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+        
+        .ethical-guidelines {
+            background-color: #fff8f8;
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            margin: 30px 0;
+        }
+        
+        .back-to-top {
+            display: block;
+            text-align: right;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+            }
+            
+            .nav-btn {
+                width: 80%;
+                margin: 5px 0;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <a href="index.php" class="nav-btn">Home</a>
+        <a href="aboutus.php" class="nav-btn">About Us</a>
+        <a href="submitarticle.php" class="nav-btn">Submit Article</a>
+    </nav>
+    
+   
+    <div class="container">
+        <main class="main-content">
+            <!-- New "What is Peer Review?" Section -->
+            <section>
+                <h2>What is Peer Review?</h2>
+                <p>Peer review is a fundamental component of scholarly publishing and a process that ensures the validity and quality of scientific literature. It involves the evaluation of research work by experts (peers) in the relevant field, aiming to assess its rigor, coherence, and contribution to existing knowledge.</p>
+                
+                <h3>Key aspects of peer review:</h3>
+                
+               
+                
+                <p>At SciencePG, we consider the peer review process crucial for maintaining the credibility and validity of the research we publish. Despite challenges, peer review remains the widely accepted method for validating research, and we are committed to upholding the highest standards of scholarship. By engaging expert reviewers, we ensure the rigor and trustworthiness of the published work, fostering confidence within the scientific community and beyond.</p>
+                
+                <a href="#" class="back-to-top">Back to top</a>
+            </section>
+            
+            
+            
+            <section>
+        <h3>Peer Review at SciencePG</h3>
+        <p>International Journal of Environmental Monitoring and Analysis</p>
+    </header>
+    
+    <div class="container">
+        <main class="main-content">
+            <section>
+                <h2>Our Peer Review Policy</h2>
+                <p>The <strong>International Journal of Environmental Monitoring and Analysis</strong> employs a rigorous double-blind peer review process to ensure the highest standards of quality and academic integrity for all published research. Our review process is designed to be fair, objective, and constructive.</p>
+                
+                <div class="process-step">
+                    <h3><span class="step-number">1</span> Initial Evaluation</h3>
+                    <p>All submissions are first assessed by the Editor-in-Chief for suitability and adherence to journal standards. This initial screening checks for:</p>
+                    <ul>
+                        <li>Appropriateness for the journal's scope</li>
+                        <li>Basic scientific quality and originality</li>
+                        <li>Compliance with ethical guidelines</li>
+                        <li>Proper formatting and structure</li>
+                    </ul>
+                    <p>Manuscripts that pass this stage are sent to at least two independent experts for review.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3><span class="step-number">2</span> Peer Review Process</h3>
+                    <p>Our double-blind review process ensures anonymity for both authors and reviewers. Reviewers evaluate manuscripts based on:</p>
+                    <ul>
+                        <li><strong>Originality:</strong> Does the work present new findings or perspectives?</li>
+                        <li><strong>Significance:</strong> Is the research important to the field?</li>
+                        <li><strong>Methodology:</strong> Are the methods appropriate and properly described?</li>
+                        <li><strong>Results:</strong> Are the results clearly presented and supported by data?</li>
+                        <li><strong>Discussion:</strong> Are conclusions justified by the results?</li>
+                        <li><strong>References:</strong> Is prior work properly acknowledged?</li>
+                    </ul>
+                    <p>Reviewers are asked to provide detailed, constructive feedback to help authors improve their work.</p>
+                </div>
+                
+                <div class="process-step">
+                    <h3><span class="step-number">3</span> Editorial Decision</h3>
+                    <p>Based on reviewer recommendations, the editorial team makes one of the following decisions:</p>
+                    <ul>
+                        <li><strong>Accept:</strong> The manuscript is accepted for publication with minor or no revisions</li>
+                        <li><strong>Minor Revisions:</strong> The manuscript requires small changes before acceptance (typically reviewed by editor only)</li>
+                        <li><strong>Major Revisions:</strong> The manuscript requires substantial changes and will be sent for re-review</li>
+                        <li><strong>Reject:</strong> The manuscript is not suitable for publication in the journal</li>
+                    </ul>
+                    <p>Authors typically receive a decision within 4-6 weeks of submission.</p>
+                </div>
+            </section>
+            
+            <section class="review-section">
+                <h2>Reviewer Guidelines</h2>
+                <p>We appreciate the valuable contribution of our peer reviewers. To maintain consistency and quality in our review process, we ask reviewers to:</p>
+                <ul>
+                    <li>Provide constructive, objective, and detailed feedback</li>
+                    <li>Evaluate manuscripts based on scientific merit rather than personal preferences</li>
+                    <li>Declare any potential conflicts of interest immediately</li>
+                    <li>Complete reviews within the agreed timeframe (typically 3-4 weeks)</li>
+                    <li>Maintain strict confidentiality of the review process</li>
+                    <li>Identify relevant published work that has not been cited</li>
+                    <li>Provide specific comments to support your recommendations</li>
+                </ul>
+                <a href="#" class="btn">Download Full Reviewer Guidelines (PDF)</a>
+            </section>
+            
+            <section class="ethical-guidelines">
+                <h2>Ethical Guidelines</h2>
+                <p>All participants in the peer review process must adhere to our ethical guidelines:</p>
+                <ul>
+                    <li>Reviewers must maintain confidentiality of the manuscript content</li>
+                    <li>Reviewers should not use knowledge of the work before publication for personal advantage</li>
+                    <li>Reviewers must declare conflicts of interest (professional, financial, or personal)</li>
+                    <li>Reviewers should not contact authors directly</li>
+                    <li>Reviewers must alert editors to any ethical concerns (plagiarism, data fabrication, etc.)</li>
+                </ul>
+                <a href="#" class="btn btn-accent">View Our Complete Ethics Policy</a>
+            </section>
+        </main>
+        
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h3>Reviewer Benefits</h3>
+                <p>Serving as a peer reviewer provides important professional benefits:</p>
+                <ul>
+                    <li>Early access to cutting-edge research in your field</li>
+                    <li>Opportunity to shape research directions and quality standards</li>
+                    <li>Certificate of recognition for your review contributions</li>
+                    <li>Potential invitation to join our Editorial Board</li>
+                    <li>20% discount on Article Processing Charges for your own submissions</li>
+                    <li>Can be listed as a reviewer in your academic CV</li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-box">
+                <h3>Become a Reviewer</h3>
+                <p>We're always seeking qualified reviewers in environmental monitoring and analysis. Ideal candidates have:</p>
+                <ul>
+                    <li>PhD or equivalent research experience</li>
+                    <li>Publications in relevant peer-reviewed journals</li>
+                    <li>Expertise in specific areas of environmental science</li>
+                </ul>
+                <p>To apply to join our reviewer panel:</p>
+                <a href="#" class="btn">Apply to Be a Reviewer</a>
+            </div>
+            
+            <div class="sidebar-box">
+                <h3>Review Timeline</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Initial Screening</div>
+                        <p>1-2 weeks after submission</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Peer Review</div>
+                        <p>3-4 weeks (reviewer dependent)</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Editorial Decision</div>
+                        <p>4-6 weeks after submission</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Publication</div>
+                        <p>8-12 weeks after acceptance</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-box">
+                <h3>Reviewer Resources</h3>
+                <ul>
+                    <li><a href="#">How to Write a Helpful Review</a></li>
+                    <li><a href="#">Ethical Guidelines for Reviewers</a></li>
+                    <li><a href="#">Reviewer Tutorial Videos</a></li>
+                    <li><a href="#">FAQs for Reviewers</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

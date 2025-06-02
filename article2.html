@@ -1,0 +1,532 @@
+<!doctype html>
+<!--[if lt IE 7]>		<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>			<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>			<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->	<html class="no-js" lang="zxx"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Iema Journal</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/fontawesome/fontawesome-all.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/chartist.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/color.css">
+	<link rel="stylesheet" href="css/transitions.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body class="sj-home">
+	<!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<!--************************************
+				Preloader Start
+	*************************************-->
+	<div class="preloader-outer">
+		<div class='loader'>
+			<div class='loader--dot'></div>
+			<div class='loader--dot'></div>
+			<div class='loader--dot'></div>
+			<div class='loader--dot'></div>
+		</div>
+	</div>
+	<!--************************************
+				Preloader End
+	*************************************-->
+	<!--************************************
+			Wrapper Start
+	*************************************-->
+	<div id="sj-wrapper" class="sj-wrapper">
+		<!--************************************
+				Content Wrapper Start
+		*************************************-->
+		<div class="sj-contentwrapper">
+			<!--************************************
+					Header Start
+			*************************************-->
+			<header id="sj-header" class="sj-header sj-haslayout">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+							<div class="sj-topbar">
+								<ul class="sj-socialicons sj-socialiconssimple">
+									<li class="sj-facebook"><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
+									<li class="sj-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+									<li class="sj-linkedin"><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+									<li class="sj-googleplus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a></li>
+								</ul>
+								<div class="sj-languagelogin">
+									<div class="sj-loginarea">
+										<ul class="sj-loging">
+											<li><a href="login.php">Login</a></li>
+											<li><a href="register.php">Register</a></li>
+										</ul>
+									</div>
+									<div class="sj-userloginarea">
+										<a href="">
+											<i class="fa fa-angle-down"></i>
+											<img src="images/user-img.jpg" alt="image description">
+											<div class="sj-loginusername">
+    <h3>Hi, <?php echo htmlspecialchars($_SESSION['first_name'] ?? 'Guest'); ?></h3>
+    <span>Author</span>
+</div>
+
+										</a>
+										<nav class="sj-usernav">
+											<ul>
+												<li><a href="underreview.html"><i class="lnr lnr-sync"></i><span>Articles Under Review</span></a></li>
+												<li><a href="addtemplates.html"><i class="lnr lnr-briefcase"></i><span>Add Templates</span></a></li>
+												<li><a href="aticle-list.html"><i class="lnr lnr-sync"></i><span>Aticle List</span></a></li>
+												<li><a href="generalsettings.html"><i class="lnr lnr-layers"></i><span>General Settings</span></a></li>
+												<li><a href="manageuser.html"><i class="lnr lnr-users"></i><span>Manage Users</span></a></li>
+												<li><a href="manageeditions.html"><i class="lnr lnr-tag"></i><span>Manage Editions</span></a></li>
+												<li><a href="emailtemplates.html"><i class="lnr lnr-envelope"></i><span>Email Templates</span></a></li>
+												<li><a href="accountsettings.html"><i class="lnr lnr-lock"></i><span>Account Settings</span></a></li>
+												<li><a href="logout.php"><i class="lnr lnr-exit"></i><span>Logout</span></a></li>
+											</ul>
+										</nav>
+									</div>
+									<div class="sj-languages">
+										<a id="sj-languages-button" href="javascript:void(0);">
+											<img src="images/flags/flag-02.jpg" alt="image description">
+											<span>Eng</span>
+											<i class="fa fa-angle-down"></i>
+										</a>
+										<ul>
+											<li>
+												<a href="javascript:void(0);">
+													<img src="images/flags/flag-01.jpg" alt="image description">
+													<span>Ara</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<img src="images/flags/flag-02.jpg" alt="image description">
+													<span>Eng</span>
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0);">
+													<img src="images/flags/flag-03.jpg" alt="image description">
+													<span>Chi</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="sj-navigationarea">
+								<strong class="sj-logo"><a href="index.php"><img src="images/logo.jpg" width="150px" height="150px" alt="company logo here" ></a></strong>
+								<div class="sj-rightarea">
+									<nav id="sj-nav" class="sj-nav navbar-expand-lg">
+										<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+											<i class="lnr lnr-menu"></i>
+										</button>
+										<div class="collapse navbar-collapse sj-navigation" id="navbarNav">
+											<ul>
+												<li class="current-menu-item menu-item-has-children page_item_has_children">
+													<a href="index.php"><i class="lnr lnr-home"></i></a>
+												</li>
+												<li>
+												<a href="aboutus.php">About us</a>
+													<ul class="sub-menu">
+													<li><a href="aimnscope.php">Aims & Scope</a></li>
+                                                    <li><a href="abstract.php">Abstract & Indexing</a></li>
+                                                    <li><a href="submission.php">Submission Guidelines</a></li>
+                                                    <li><a href="editorial.php">Editorial Process</a></li>
+
+
+
+</ul>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<a href="javascript:void(0);">Articles</a>
+													<ul class="sub-menu">
+														<li><a href="articles.html">Articles</a></li>
+														<li><a href="submitarticle.php">Submit Article</a></li>
+													</ul>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<span class="sj-tagnew">New</span>
+													<a href="javascript:void(0);">Issues</a>
+													<ul class="sub-menu">
+														<li><a href="issuesweeks.html">Issues Weeks</a></li>
+														<li><a href="issueyears.php">Issues Years</a></li>
+													</ul>
+												</li>
+												<li class="menu-item-has-children page_item_has_children">
+													<a href="javascript:void(0);">Quick Links</a>
+													<ul class="sub-menu">
+														
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</nav>
+									<a class="sj-btntopsearch" href="#sj-searcharea"><i class="lnr lnr-magnifier"></i></a>
+									<a class="sj-btn sj-btnactive" href="submitarticle.php">Submit Your Article</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!--************************************
+					Header End
+			*************************************-->
+			<!--************************************
+					Inner Banner Start
+			*************************************-->
+			<div class="sj-innerbanner">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="sj-innerbannercontent">
+								<h1>Article Title Here</h1>
+								<ol class="sj-breadcrumb">
+									<li><a href="index.php">Home</a></li>
+									<li><a href="articles.html">Articles</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--************************************
+					Inner Banner End
+			*************************************-->
+			<!--************************************
+					Main Start
+			*************************************-->
+			<main id="sj-main" class="sj-main sj-haslayout sj-sectionspace">
+				<div id="sj-twocolumns" class="sj-twocolumns">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-8 col-lg-9">
+								<div id="sj-content" class="sj-content">
+									<div class="sj-articledetail">
+							
+                                        <section id="analytics-energy-sector-nigeria">
+                                            <article>
+                                                <h2>Analytics in Nigeria's Energy Sector: Can It Solve the Power Crisis?</h2>
+                                                
+                                                <h3>Defining the Energy Crisis in Nigeria</h3>
+                                                <p>Nigeria has long grappled with a persistent power crisis, which has hindered the country's economic and social development. Despite being a major producer and exporter of energy resources, such as crude oil and natural gas, Nigeria has struggled to meet the domestic demand for electricity, leaving many households and businesses without reliable access to power. The country's energy woes can be attributed to a complex interplay of factors, including aging infrastructure, mismanagement, and underinvestment in the energy sector.</p>
+                                                
+                                                <p>The inadequate supply of electricity has had far-reaching consequences for Nigeria's economy and its people. Businesses and industries have faced significant operational challenges, leading to reduced productivity and competitiveness. Households have resorted to relying on costly and polluting alternative sources, such as gasoline generators, further straining their financial resources. The power crisis has also had a detrimental impact on the country's social and environmental well-being, with evidence of negative impacts on health and the environment.</p>
+                                                
+                                                <h3>Understanding Nigeria's Power Crisis</h3>
+                                                <p>Nigeria's energy challenges are multifaceted. The national grid, with an installed capacity of approximately 13,000 MW, often delivers less than 5,000 MW to a population exceeding 200 million. Issues such as outdated infrastructure, frequent grid collapses, transmission bottlenecks, gas supply constraints, and an underfunded distribution network exacerbate the crisis. In addition, the reliance on expensive and polluting diesel generators remains a common stopgap solution for businesses and households.</p>
+                                                
+                                                <h3>The Role of Analytics in Addressing the Power Crisis</h3>
+                                                <p>The application of advanced analytics and data-driven approaches can offer a promising solution to Nigeria's power crisis. By leveraging the power of data, analytics, and emerging technologies, the energy sector in Nigeria can potentially enhance its efficiency, optimize resource utilization, and improve decision-making.</p>
+                                                
+                                                <p>One key area where analytics can contribute is in the optimization of energy generation and distribution. Through the use of predictive analytics, energy companies can better forecast demand patterns, identify inefficiencies in the grid, and make informed decisions about infrastructure investments and maintenance. Similarly, the integration of real-time data and sensor technology can enable more effective monitoring and control of the energy system, allowing for swift responses to disruptions and the identification of areas for improvement.</p>
+                                                
+                                                <p>Analytics can also play a vital role in the integration of renewable energy sources, such as solar and wind, into Nigeria's energy mix. By analyzing data on renewable energy potential, grid stability, and consumer behavior, policymakers and energy providers can make more informed decisions about the deployment and utilization of these sustainable energy alternatives.</p>
+                                                
+                                                <p>Analytics can offer data-driven insights to improve decision-making, optimize operations, and enhance the reliability of Nigeria's energy sector. Here are other areas where analytics could make a transformative impact:</p>
+                                                
+                                                <ol>
+                                                    <li><strong>Predictive Maintenance of Infrastructure:</strong> Nigeria's energy infrastructure is prone to breakdowns and inefficiencies. Analytics can enable predictive maintenance by using real-time data from sensors on critical equipment to identify potential failures before they occur. Machine learning models can analyze patterns and recommend timely interventions, reducing downtime and improving system reliability.</li>
+                                                    
+                                                    <li><strong>Demand Forecasting and Load Management:</strong> Energy demand in Nigeria fluctuates widely, often outstripping supply. Analytics can improve demand forecasting by analyzing historical consumption data, weather patterns, and economic indicators. This allows energy providers to plan more effectively and allocate resources where they are needed most.</li>
+                                                    
+                                                    <li><strong>Policy and Investment Insights:</strong> Data analytics can provide policymakers with evidence-based insights to craft better energy policies. By simulating various scenarios, stakeholders can understand the impact of regulatory changes, pricing reforms, and investment strategies. Analytics can also attract investors by demonstrating the financial viability and potential returns of energy projects.</li>
+                                                </ol>
+                                                
+                                                <p>Moreover, analytics can contribute to the enhancement of energy efficiency and the reduction of energy consumption. By leveraging data on energy usage patterns, building performance, and consumer behavior, energy providers can develop targeted strategies to promote energy conservation and optimize energy usage, ultimately reducing the strain on the country's energy infrastructure.</p>
+                                                
+                                                <h3>Challenges and Limitations</h3>
+                                                <p>Despite the promising potential of analytics in Nigeria's energy sector, there are significant challenges that must be addressed.</p>
+                                                
+                                                <p>Key among these challenges is the lack of a coherent legal framework and incentives to support the adoption of renewable energy and the use of data-driven solutions. Policymakers must work to create a conducive environment that encourages investment, innovation, and the integration of analytics-driven approaches.</p>
+                                                
+                                                <p>Additionally, the availability and quality of data in the Nigerian energy sector remain a significant hurdle. Improvements in data collection, management, and sharing will be crucial to enable the effective application of analytics.</p>
+                                                
+                                                <p>Further, the implementation of analytics-driven solutions requires significant investments in infrastructure, technology, and human capital. Capacity building and skills development will be essential to ensure that the benefits of analytics are fully realized.</p>
+                                                
+                                                <p>Nonetheless, the potential benefits of leveraging analytics in Nigeria's energy sector are substantial. By addressing the challenges and limitations, policymakers, energy providers, and stakeholders can work towards a more reliable, efficient, and sustainable energy future for the country.</p>
+                                                
+                                                <h3>Lack of Reliable Power Supply</h3>
+                                                <p>Nigeria's power sector has long been plagued by a severe and persistent electricity crisis, hindering the country's economic and social development. Despite being a major producer and exporter of energy resources, such as crude oil and natural gas, Nigeria has struggled to meet the domestic demand for electricity, leaving many households and businesses without reliable access to power.</p>
+                                                
+                                                <p>The inadequate supply of electricity has had far-reaching consequences for the country. Businesses and industries have faced significant operational challenges, leading to reduced productivity and competitiveness. Households have resorted to relying on costly and polluting alternative sources, such as gasoline generators, further straining their financial resources. The power crisis has also had a detrimental impact on the country's social and environmental well-being, with evidence of negative impacts on health and the environment.</p>
+                                                
+                                                <p>The lack of investment in infrastructure, especially from private investors, has been a major contributor to the persistent power crisis in Nigeria. The unbundling and privatization of generation and distribution companies have not resulted in the expected improvements, as the lack of a cost-reflective tariff and other regulatory obstacles have discouraged investment in the sector.</p>
+                                                
+                                                <h3>The Role of Analytics in Addressing the Power Crisis</h3>
+                                                <p>The application of advanced analytics and data-driven approaches can offer a promising solution to Nigeria's power crisis. Predictive analytics can help energy companies better forecast demand patterns and identify inefficiencies in the grid, enabling them to make informed decisions about infrastructure investments and maintenance. Real-time data and sensor technology can also improve monitoring and control of the energy system, allowing for swift responses to disruptions and the identification of areas for improvement.</p>
+                                                
+                                                <p>Analytics can also play a vital role in the integration of renewable energy sources, such as solar and wind, into Nigeria's energy mix. By analyzing data on renewable energy potential, grid stability, and consumer behavior, policymakers and energy providers can make more informed decisions about the deployment and utilization of these sustainable energy alternatives.</p>
+                                                
+                                                <p>Moreover, analytics can contribute to the enhancement of energy efficiency and the reduction of energy consumption. By leveraging data on energy usage patterns, building performance, and consumer behavior, energy providers can develop targeted strategies to promote energy conservation and optimize energy usage, ultimately reducing the strain on the country's energy infrastructure.</p>
+                                                
+                                                <p>One disruptive element in Nigeria's energy sector is the increasing adoption of electric vehicles, which will significantly reduce the demand for traditional fossil fuels. Nigeria, blessed with abundant solar energy resources, is witnessing growing interest from financiers to invest in renewable energy projects across Africa. The Nigerian government is also actively promoting solar power initiatives for rural and institutional electrification. These developments present promising opportunities for private entities to contribute to Nigeria's environmental sustainability goals.</p>
+                                                
+                                                <p>A comparative study of the viability of solar-diesel hybrid against diesel-only generator systems in powering a base station using the cost of kilowatt hour self-generated electricity and levelised cost of energy was undertaken using data from some sites located in the Southwest and the Northeast regions of Nigeria. The study, which utilized Homer Pro Software for data analysis, highlighted the potential of hybrid systems to provide a more cost-effective and environmentally friendly alternative to traditional diesel generators.</p>
+                                                
+                                                <h3>Challenges and Opportunities</h3>
+                                                <p>While the potential benefits of analytics in Nigeria's energy sector are substantial, there are also significant challenges that must be addressed.</p>
+                                                
+                                                <p>The lack of a coherent legal framework with incentives for using renewable energy has been identified as a key issue causing slow uptake of renewable energy as an alternative source of energy in Nigeria. The implications for Nigeria's oil sector will not be limited to dwindling crude oil prices, but also the need to promote energy efficiency and sustainability.</p>
+                                                
+                                                <p>Addressing these challenges will require a comprehensive approach that includes policy reforms, investment in infrastructure, and capacity building.</p>
+                                                
+                                                <p>Nigeria is estimated to have significant potential for renewable energy sources, such as large hydropower, small hydropower, wind, solar, and biomass. However, realizing the full potential of these resources will depend on coordinated efforts to develop the necessary infrastructure, attract investment, and build the technical capabilities required to effectively integrate and manage these alternative energy sources.</p>
+                                                
+                                                <p>Countries like India and Kenya have successfully leveraged analytics to address energy challenges. India's use of smart meters and advanced grid management systems has significantly improved energy efficiency and reduced losses. Kenya's renewable energy analytics has enabled the country to harness its geothermal and wind resources effectively. These examples demonstrate that with the right strategy, analytics can be a game-changer for Nigeria.</p>
+                                                
+                                                <h3>Conclusion</h3>
+                                                <p>While analytics is not a panacea for Nigeria's power crisis, it offers a powerful toolkit to address its complexities. By leveraging data-driven insights, Nigeria can optimize its energy sector, reduce inefficiencies, and pave the way for a sustainable energy future. For analytics to succeed, however, there must be a concerted effort by the government, private sector, and international partners to invest in technology, build capacity, and create an enabling environment. Solving Nigeria's power crisis will require innovation, collaboration, and a commitment to long-term solutions—analytics can be the cornerstone of this transformation.</p>
+                                            </article>
+                                        </section>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-4 col-lg-3">
+								<aside id="sj-sidebar" class="sj-sidebar">
+									<div class="sj-widget sj-widgetsearch">
+										<div class="sj-widgetcontent">
+											<form class="sj-formtheme sj-formsearch">
+												<fieldset>
+													<input type="search" name="search" class="form-control" placeholder="Search here">
+													<button type="submit" class="sj-btnsearch"><i class="lnr lnr-magnifier"></i></button>
+												</fieldset>
+											</form>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetrelatedarticles">
+										<div class="sj-widgetheading">
+											<h3>Related Articles</h3>
+										</div>
+										<div class="sj-widgetcontent">
+											<ul>
+												<li>
+													<span class="sj-username"><a href="javascript:void(0);">Coleman Hoff</a></span>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit ased eiusmod tempor incididunt.</p>
+													</div>
+												</li>
+												<li>
+													<span class="sj-username"><a href="javascript:void(0);">Milan Poat</a></span>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit ased eiusmod tempor incididunt.</p>
+													</div>
+												</li>
+												<li>
+													<span class="sj-username"><a href="javascript:void(0);">Kimberly Delapena</a></span>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit ased eiusmod tempor incididunt.</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetimpactfector">
+										<div class="sj-widgetcontent">
+											<ul>
+												<li>
+													<h3>Impact Factor<span>2.125</span></h3>
+													<h3>5 Year Impact Factor<span>2.853</span></h3>
+												</li>
+												<li>
+													<h3>Dr. Desmond Bratton</h3>
+													<div class="sj-description">
+														<p>Consectetur adipisicing elit sedo amod tempor incididunt. <a href="javascript:void(0)">Read More</a></p>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetnoticeboard">
+										<div class="sj-widgetheading">
+											<h3>Notice Board</h3>
+										</div>
+										<div class="sj-widgetcontent">
+											<ul>
+												<li><a href="javascript:void(0);">Adipisicing elitaium sed dotas eiusm tempor incididunt utae labore etiate dolore magna aliqua enim.</a></li>
+												<li><a href="javascript:void(0);">Labore etiat dolore magna aliquaen ad minim veniam.</a></li>
+												<li><a href="javascript:void(0);">Duis aute irure dolor in reprehender</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetadd">
+										<span class="sj-headtitle">Advertisment 270 x270</span>
+										<div class="sj-widgetcontent">
+											<figure class="sj-addimage"><a href="javascript:void(0);"><img src="images/widget-add.jpg" alt="image description"></a></figure>
+										</div>
+									</div>
+									<div class="sj-widget sj-widgetquestions">
+										<div class="sj-widgetheading">
+											<h3>Question Of The Week</h3>
+										</div>
+										<div class="sj-widgetcontent">
+											<div class="sj-description">
+												<p>Consectetur adipisicing elit, sed aeiuse tempor incididunt ut labore etamiudon magna aliqua enim ad minim?</p>
+											</div>
+											<div class="sj-questions">
+												<div class="sj-selectgroup">
+													<span class="sj-radio">
+														<input id="sj-qone" type="radio" name="question" value="qone" checked="">
+														<label for="sj-qone">Sputum stain for acid-fast bacilli</label>
+													</span>
+													<span class="sj-radio">
+														<input id="sj-qtwo" type="radio" name="question" value="qtwo">
+														<label for="sj-qtwo">Pleural biopsy</label>
+													</span>
+													<span class="sj-radio">
+														<input id="sj-qthree" type="radio" name="question" value="qthree">
+														<label for="sj-qthree">Pleural fluid amylase</label>
+													</span>
+													<span class="sj-radio">
+														<input id="sj-qfour" type="radio" name="question" value="qfour">
+														<label for="sj-qfour">Pleural fluid cytology</label>
+													</span>
+												</div>
+												<a class="sj-btn" href="javascript:void(0);">Submit Now</a>
+											</div>
+										</div>
+									</div>
+									
+									
+									<div class="sj-widget sj-widgetadd">
+										<div class="sj-widgetcontent">
+											<figure class="sj-addimage"><a href="javascript:void(0);"><img src="images/widget-add2.jpg" alt="image description"></a></figure>
+										</div>
+									</div>
+								</aside>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+			<!--************************************
+					Main End
+			*************************************-->
+			<!--************************************
+					Footer Start
+			*************************************-->
+			<footer id="sj-footer" class="sj-footer sj-haslayout">
+				<div class="container">
+					<div class="row">
+						<a class="sj-btnscrolltotop" href="javascript:void(0);"><i class="fa fa-angle-up"></i></a>
+						<div class="sj-footercolumns">
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-footeraboutus">
+									<strong class="sj-logo">
+										<a href="index.html"><img src="images/logo.jpg" alt="image description"></a>
+									</strong>
+									<div class="sj-description">
+									</div>
+									<ul class="sj-socialicons sj-socialiconssimple">
+										<li class="sj-facebook"><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
+										<li class="sj-twitter"><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+										<li class="sj-linkedin"><a href="javascript:void(0);"><i class="fab fa-linkedin-in"></i></a></li>
+										<li class="sj-googleplus"><a href="javascript:void(0);"><i class="fab fa-google-plus-g"></i></a></li>
+										<li class="sj-rss"><a href="javascript:void(0);"><i class="fa fa-rss"></i></a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-widget sj-widgetusefullinks">
+									<div class="sj-widgetheading">
+										<h3>By Specialty</h3>
+									</div>
+									<div class="sj-widgetcontent">
+										<ul>
+											<li><a href="javascript:void(0);">Contact Us</a></li>
+											<li><a href="javascript:void(0);">Careers @ Iema Journal</a></li>
+											<li><a href="javascript:void(0);">Get Help and Support</a></li>
+											<li><a href="javascript:void(0);">Rights &amp; Permissions</a></li>
+											<li class="sj-more"><a href="javascript:void(0);">more</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-widget sj-widgetresources">
+									<div class="sj-widgetheading">
+										<h3>Resources</h3>
+									</div>
+									<div class="sj-widgetcontent">
+										<ul>
+											<li><a href="javascript:void(0);">Authors</a></li>
+											<li><a href="javascript:void(0);">Librarians</a></li>
+											<li><a href="javascript:void(0);">Sponsors &amp; Advertisers</a></li>
+											<li><a href="javascript:void(0);">Press &amp; Media</a></li>
+											<li class="sj-more"><a href="javascript:void(0);">more</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-6 col-md-6 col-lg-3 float-left">
+								<div class="sj-fcol sj-widget sj-widgetcontactus">
+									<div class="sj-widgetheading">
+										<h3>Get In Touch</h3>
+									</div>
+									<div class="sj-widgetcontent">
+										<ul>
+											<li><i class="lnr lnr-home"></i><address>27a. Alternative route, Opp. Madam Juliana str., Chevron drive </address></li>
+											<li><a href="tel:(+4)123456789101"><i class="lnr lnr-phone"></i><span>(+4) 1234 5678 9101</span></a></li>
+											<li><a href="tel:(+4)123456789101"><i class="lnr lnr-screen"></i><span>(+4) 4321 8765 1019</span></a></li>
+											<li><a href="mailto:info@yourdomain.com"><i class="lnr lnr-envelope"></i><span>info@iemajournal.org</span></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sj-footerbottom">
+							<p class="sj-copyrights">© 2025 <span>Iema Journal</span>. All Rights Reserved</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		
+			<!--************************************
+					Footer End
+			*************************************-->
+		</div>
+		<!--************************************
+				Content Wrapper End
+		*************************************-->
+	</div>
+	<!--************************************
+			Wrapper End
+	*************************************-->
+	<!--************************************
+			Search Start
+	*************************************-->
+	<div id="sj-searcharea" class="sj-searcharea">
+		<button type="button" class="close">×</button>
+		<form class="sj-formtheme sj-formsearcmain">
+			<input type="search" value="" placeholder="Search Here..." />
+			<button type="submit" class="sj-btn sj-btnactive"><span>Search</span></button>
+		</form>
+	</div>
+	<!--************************************
+			Search End
+	*************************************-->
+	<script src="js/vendor/jquery-3.3.1.js"></script>
+	<script src="js/vendor/jquery-library.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/circle-progress.js"></script>
+	<script src="js/scrollbar.min.js"></script>
+	<script src="js/chartist.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/appear.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
